@@ -54,22 +54,22 @@ function draw() {
   }
   
   else if(movingSprite.isTouching(fixSprite3)){
-    music.stop()
+    music.play()
     movingSprite.shapeColor="blue";
     bounceOff(movingSprite,fixSprite3)
    
   }
     
   else if(movingSprite.isTouching(fixSprite2)){
-    music.stop()
+    music.play()
     movingSprite.shapeColor="green";
     bounceOff(movingSprite,fixSprite2)
-    movingSprite.velocityX=0;
-    movingSprite.velocityY=0;
+    
+    
   }
   
   else if(movingSprite.isTouching(fixSprite1)){
-    music.stop()
+    music.play()
     movingSprite.shapeColor="red";
     movingSprite.bounceOff(fixSprite1)
   }
